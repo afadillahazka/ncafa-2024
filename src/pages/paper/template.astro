@@ -1,0 +1,32 @@
+---
+import Container from "../../components/Container.astro";
+import Heading2 from "../../components/Heading2.astro";
+import Layout2 from "../../layouts/Layout2.astro";
+import ButtonContainer from "../../components/ButtonContainer.astro";
+import Button from "../../components/Button.astro";
+
+---
+
+<Layout2>
+    <Heading2 
+        text="Paper Template"
+    />
+    <Container>
+        <ButtonContainer>
+            <Button
+                href=""
+                class="fa-solid fa-download"
+                title="Abstract Template"
+                description="Click this button to download Abstract Template."
+            />
+        </ButtonContainer>
+        <ButtonContainer>
+            <Button
+                href=""
+                class="fa-solid fa-download"
+                title="Full Paper Template"
+                description="Click this button to download Full Paper Template."
+            />
+        </ButtonContainer>
+    </Container>
+</Layout2>

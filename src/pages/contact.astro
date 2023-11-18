@@ -1,0 +1,53 @@
+---
+import Jumbotron from "../components/Jumbotron.astro";
+import Paragraph from "../components/Paragraph.astro";
+import Layout from "../layouts/Layout.astro";
+import Container from "../components/Container.astro";
+import ContactSub from "../components/ContactSub.astro"
+import ContactContainer from "../components/ContactContainer.astro";
+import Heading2 from "../components/Heading2.astro";
+import DateIndex from "../components/DateIndex.astro";
+import ContainerScreen from "../components/ContainerScreen.astro";
+
+---
+
+		<Layout title="Contact">
+			<Jumbotron
+				src="/jumbotron/contactus-desktop.webp"
+			/>
+			<ContainerScreen>
+
+				<ContactContainer>
+					<ContactSub
+					media="WhatsApp"
+					,
+					class="fa-brands fa-whatsapp fa-2xl py-3 text-black"
+					,
+					text="0812 8842 5931"
+					,
+					href="wa.me/6281288425931"
+					,
+				/>
+				<ContactSub
+					media="Email"
+					,
+					class="fa-regular fa-envelope fa-2xl py-3 text-black"
+					,
+					text="in-ncafa@trilogi.ac.id"
+					,
+					href="wa.me/6281288425931"
+					,
+					/>
+					<ContactSub
+					media="Instagram"
+					,
+					class="fa-brands fa-instagram fa-2xl py-3 text-black"
+					,
+					text="@in.ncafatrilogi"
+					,
+					href="wa.me/6281288425931"
+					,
+				/>
+			</ContactContainer>
+		</ContainerScreen>
+		</Layout>

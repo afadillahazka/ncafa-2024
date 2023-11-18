@@ -1,0 +1,23 @@
+---
+import Jumbotron from "../components/Jumbotron.astro";
+import Paragraph from "../components/Paragraph.astro";
+import Layout from "../layouts/Layout.astro";
+import Container from "../components/Container.astro";
+import ContactContainer from "../components/ContactContainer.astro";
+import Heading2 from "../components/Heading2.astro";
+import DateIndex from "../components/DateIndex.astro";
+import ContainerScreen from "../components/ContainerScreen.astro";
+
+---
+
+		<Layout title="Committee">
+			<Jumbotron
+				src="/jumbotron/committee-desktop.webp"
+			/>
+			<ContainerScreen>
+				<div class="h-full"></div>
+                    <Paragraph
+					text="This event is not only the result of one party's hard work, but involves close collaboration between lecturers and students. Lecturers as academic supervisors play an active role in directing and providing views from an academic point of view, while students as the main actors in the implementation of the event also contribute their creative ideas."
+                    />
+                </ContainerScreen>
+		</Layout>

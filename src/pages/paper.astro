@@ -1,0 +1,144 @@
+---
+import Jumbotron from "../components/Jumbotron.astro";
+import Paragraph from "../components/Paragraph.astro";
+import Layout from "../layouts/Layout.astro";
+import Container from "../components/Container.astro";
+import Contact from "../components/ContactSub.astro";
+import ContactContainer from "../components/ContactContainer.astro";
+import Heading2 from "../components/Heading2.astro";
+import PricePaper from "../components/PricePaper.astro";
+import DatePaper from "../components/DatePaper.astro";
+import SORContainer from "../components/SORContainer.astro";
+import SOR from "../components/SOR.astro";
+import Button from "../components/Button.astro";
+import ButtonContainer from "../components/ButtonContainer.astro";
+---
+
+<Layout title="Call for Paper">
+    <Jumbotron 
+    src="/jumbotron/callforpaper-desktop.webp" />
+    <Container>
+        <Paragraph
+            text="This conference gathers various academics, experts and professionals in their respective fields to provide alternative solutions that bridge the gap between theoretical perspectives and research findings in the academic world with practical realities in both the business and public sectors. It is hoped that this conference will also make a constructive contribution by providing recommendations for government policies, especially in the role of accountants in preventing fraudulent behavior, tax regulations, and policies in the capital market and money market sectors."
+        />
+    </Container>
+    <Container>
+        <Heading2 text="Scope of Research" />
+        <SORContainer>
+            <SOR
+                sor="Financial Accounting and Capital Markets"
+                class="fa-solid fa-money-bill-trend-up fa-2xl pb-4"
+            />
+            <SOR
+                sor="Management and Behavioral Accounting"
+                class="fa-solid fa-bars-progress fa-2xl pb-4 h-1/2"
+            />
+            <SOR
+                sor="Public Sector Accounting"
+                class="fa-solid fa-user fa-2xl pb-4"
+            />
+            <SOR
+                sor="Sharia Accounting"
+                class="fa-solid fa-star-and-crescent fa-2xl pb-4"
+            />
+            <SOR
+                sor="Fraud and Forensic Accounting"
+                class="fa-solid fa-building-shield fa-2xl pb-4"
+            />
+            <SOR
+                sor="Accounting Education"
+                class="fa-solid fa-graduation-cap fa-2xl pb-4"
+            />
+            <SOR sor="Taxation" class="fa-solid fa-receipt fa-2xl pb-4" />
+            <SOR
+                sor="Information Systems, Auditing, and Professional Ethics "
+                class="fa-solid fa-sitemap fa-2xl pb-4"
+            />
+            <SOR
+                sor="Governance & Sustainability Accounting"
+                class="fa-solid fa-users-between-lines fa-2xl pb-4"
+            />
+        </SORContainer>
+    </Container>
+    <Container>
+        <Heading2 text="Timeline" />
+        <DatePaper />
+    </Container>
+    <Container>
+        <Heading2 text="Price" />
+        <PricePaper />
+    </Container>
+    <Container>
+        <Heading2 text="Registration" />
+        <ButtonContainer>
+            <Button
+                href=""
+                class="fa-solid fa-user-plus"
+                title="Paper Submission"
+                description="Click this button to submit your paper."
+            />
+        </ButtonContainer>
+        <ButtonContainer>
+            <Button
+                href=""
+                class="fa-solid fa-user-plus"
+                title="Paper Registration"
+                description="Click this button to registration call for paper."
+            />
+        </ButtonContainer>
+    </Container>
+    <Container>
+        <Heading2 text="Paper Terms and Conditions" />
+        <ButtonContainer>
+            <Button
+                href=""
+                class="fa-solid fa-download"
+                title="Abstract Template"
+                description="Click this button to download Abstract Template."
+            />
+        </ButtonContainer>
+        <ButtonContainer>
+            <Button
+                href=""
+                class="fa-solid fa-download"
+                title="Full Paper Template"
+                description="Click this button to download Full Paper Template."
+            />
+        </ButtonContainer>
+    </Container>
+    <Container>
+        <Heading2 text="Contact Us" />
+        <ContactContainer>
+            <Contact
+                media="WhatsApp"
+                ,
+                class="fa-brands fa-whatsapp fa-2xl py-3 text-black"
+                ,
+                text="0812 8842 5931"
+                ,
+                href="wa.me/6281288425931"
+                ,
+            />
+            <Contact
+                media="Email"
+                ,
+                class="fa-regular fa-envelope fa-2xl py-3 text-black"
+                ,
+                text="in-ncafa@trilogi.ac.id"
+                ,
+                href="wa.me/6281288425931"
+                ,
+            />
+            <Contact
+                media="Instagram"
+                ,
+                class="fa-brands fa-instagram fa-2xl py-3 text-black"
+                ,
+                text="@in.ncafatrilogi"
+                ,
+                href="wa.me/6281288425931"
+                ,
+            />
+        </ContactContainer>
+    </Container>
+</Layout>

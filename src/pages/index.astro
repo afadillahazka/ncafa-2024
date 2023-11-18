@@ -1,0 +1,53 @@
+---
+import Jumbotron from "../components/Jumbotron.astro";
+import Paragraph from "../components/Paragraph.astro";
+import Layout from "../layouts/Layout.astro";
+import Container from "../components/Container.astro";
+import ContactContainer from "../components/ContactContainer.astro";
+import Contact from "../components/ContactSub.astro";
+import Heading2 from "../components/Heading2.astro";
+import DateIndex from "../components/DateIndex.astro";
+
+---
+
+		<Layout title="Home">
+			<Jumbotron
+				src="/jumbotron/main-desktop2024.webp"
+			/>
+			<Container>
+				<Paragraph
+					text="2023 is the fourth year of holding NCAFA and the first year of InCAFA which will be held in a hybrid manner; offline at Trilogi University Auditorium, Jakarta and online through Zoom Cloud Meetings. This InCAFA & NCAFA activity will have an important influence on Trilogi University in establishing scientific communication with academics, business practitioners and public sector actors because the research results presented in accounting cover various studies, including Financial Accounting and Capital Markets (AKPM), Accounting Management and Behavior (AKMK), Information Systems, Auditing, and Professional Ethics (SIAEP), Taxation (PPJK), Sharia Accounting (AKSR), Governance and Sustainability Accounting (TKSA), Fraud and Forensic Accounting (FFA), Public Sector Accounting (ASP), and Accounting Education (PAk)."
+				/>
+			</Container>
+			<Container>
+				<Heading2
+					text="Timeline"
+				/>
+				<DateIndex/>
+			</Container>
+			<Container>
+				<Heading2
+					text="Contact Us"
+				/>
+				<ContactContainer>
+					<Contact
+						media="WhatsApp",
+						class="fa-brands fa-whatsapp fa-2xl py-3 text-black",
+						text="0812 8842 5931",
+						href="wa.me/6281288425931",
+					/>
+					<Contact
+						media="Email",
+						class="fa-regular fa-envelope fa-2xl py-3 text-black",
+						text="in-ncafa@trilogi.ac.id",
+						href="wa.me/6281288425931",
+					/>
+					<Contact
+						media="Instagram",
+						class="fa-brands fa-instagram fa-2xl py-3 text-black",
+						text="@in.ncafatrilogi",
+						href="wa.me/6281288425931",
+					/>
+				</ContactContainer>
+			</Container>
+		</Layout>

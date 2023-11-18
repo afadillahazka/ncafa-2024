@@ -1,0 +1,45 @@
+---
+const mitrajurnal = [
+    {
+        name: "",
+        src: "/mitrajurnal/jak2.png",
+    },
+    {
+        name: "",
+        src: "/mitrajurnal/ja-bengkulu2.png",
+    },
+    {
+        name: "",
+        src: "/mitrajurnal/baki.png",
+    },
+    {
+        name: "",
+        src: "/mitrajurnal/pajaktrisakti.png",
+    },
+]
+---
+
+<div class="m-4">
+    <div class="flex items-center justify-center mt-2 mb-3 w-full">
+        <h2
+            class="rounded-full bg-ncafa-3 text-white text-base sm:text-2xl lg:text-3xl lg:text-center px-6 py-1"
+        >
+            SINTA 3
+        </h2>
+    </div>
+    <div
+        class="grid grid-cols-2 justify-center justify-items-center md:grid-cols-3 gap-2 py-4"
+    >
+        {
+            mitrajurnal.map((mitrajurnal) => (
+                <div class="flex justify-center">
+                    <img
+                    class="h-3/4 lg:h-auto lg:w-1/2 rounded-lg"
+                        src={mitrajurnal.src}
+                        alt={mitrajurnal.name}
+                    />
+                </div>
+            ))
+        }
+    </div>
+</div>
