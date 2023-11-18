@@ -13,6 +13,6 @@ const { media, class:className, text, href } = Astro.props
     <div class="card-body items-center text-center">
         <i class={className}></i>
         <h2 class="text-black text-lg sm:text-2xl card-title">{media}</h2>
-        <a target="_blank" href={href}><p class="text-black">{text}</p></a>
+        <a target="_blank" href={href}><p class="text-black text-underline">{text}</p></a>
     </div>
 </div>
