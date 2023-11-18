@@ -3,6 +3,7 @@ import Jumbotron from "../components/Jumbotron.astro";
 import Paragraph from "../components/Paragraph.astro";
 import Layout from "../layouts/Layout.astro";
 import Container from "../components/Container.astro";
+import Contact from "../components/ContactSub.astro";
 import ContactContainer from "../components/ContactContainer.astro";
 import Heading2 from "../components/Heading2.astro";
 import DateSeminar from "../components/DateSeminar.astro";
@@ -20,5 +21,30 @@ import CoHostGallery from "../components/CoHostGallery.astro";
 					text="Co-Host"
 				/>
 				<CoHostGallery/>
+			</Container>
+			<Container>
+				<Heading2 text="Contact Us" />
+				<ContactContainer>
+					<Contact
+					media="WhatsApp"
+					,
+					class="fa-brands fa-whatsapp fa-2xl py-3 text-black"
+					,
+					text="+62 838-0670-7035 (Ms. Almira)"
+					,
+					href="wa.me/6283806707035"
+					,
+				/>
+					<Contact
+						media="Email"
+						,
+						class="fa-regular fa-envelope fa-2xl py-3 text-black"
+						,
+						text="in-ncafa@trilogi.ac.id"
+						,
+						href="wa.me/6281288425931"
+						,
+					/>
+				</ContactContainer>
 			</Container>
 		</Layout>

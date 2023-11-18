@@ -4,11 +4,48 @@ import Layout from "../layouts/Layout.astro";
 import Container from "../components/Container.astro";
 import Heading2 from "../components/Heading2.astro";
 import GallerySponsors from "../components/GallerySponsors.astro";
+import ContactContainer from "../components/ContactContainer.astro";
+import Contact from "../components/ContactSub.astro";
 
 ---
 
 		<Layout title="Sponsors">
 			<Container>
                 <GallerySponsors/>
+			</Container>
+			<Container>
+				<Heading2 text="Contact Us" />
+				<ContactContainer>
+					<Contact
+					media="WhatsApp "
+					,
+					class="fa-brands fa-whatsapp fa-2xl py-3 text-black"
+					,
+					text="+62 881-1675-315 (Ms. Novia)"
+					,
+					href="wa.me/628811675315"
+					,
+				/>
+					<Contact
+						media="Email"
+						,
+						class="fa-regular fa-envelope fa-2xl py-3 text-black"
+						,
+						text="in-ncafa@trilogi.ac.id"
+						,
+						href="wa.me/6281288425931"
+						,
+					/>
+					<Contact
+						media="Instagram"
+						,
+						class="fa-brands fa-instagram fa-2xl py-3 text-black"
+						,
+						text="@in.ncafatrilogi"
+						,
+						href="wa.me/6281288425931"
+						,
+					/>
+				</ContactContainer>
 			</Container>
 		</Layout>
