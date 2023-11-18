@@ -12,6 +12,7 @@ import SORContainer from "../components/SORContainer.astro";
 import SOR from "../components/SOR.astro";
 import Button from "../components/Button.astro";
 import ButtonContainer from "../components/ButtonContainer.astro";
+import TableGuideline from "../components/TableGuideline.astro";
 ---
 
 <Layout title="Call for Paper">
@@ -64,12 +65,16 @@ import ButtonContainer from "../components/ButtonContainer.astro";
         <Heading2 text="Timeline" />
         <DatePaper />
     </Container>
+    <!-- <Container>
+        <Heading2 text="Guideline" />
+        <TableGuideline />
+    </Container> -->
     <Container>
         <Heading2 text="Price" />
         <PricePaper />
     </Container>
     <Container>
-        <Heading2 text="Registration" />
+        <Heading2 text="Submission and Registration" />
         <ButtonContainer>
             <Button
                 href=""
@@ -88,7 +93,7 @@ import ButtonContainer from "../components/ButtonContainer.astro";
         </ButtonContainer>
     </Container>
     <Container>
-        <Heading2 text="Paper Terms and Conditions" />
+        <Heading2 text="Terms and Conditions" />
         <ButtonContainer>
             <Button
                 href=""
@@ -105,6 +110,7 @@ import ButtonContainer from "../components/ButtonContainer.astro";
                 description="Click this button to download Full Paper Template."
             />
         </ButtonContainer>
+
     </Container>
     <Container>
         <Heading2 text="Contact Us" />

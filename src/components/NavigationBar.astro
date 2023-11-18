@@ -12,6 +12,12 @@ const menuItems = [
   {
     title: "Call for Paper",
     path: "/paper",
+    children: [
+      {
+        title:"Template",
+        path:"/template",
+      }
+    ]
   },
   {
     title: "Journal Partners",
@@ -73,7 +79,7 @@ const menuItems = [
         {
           menuItems.map((menu) => (
             <li>
-              <a href={menu.path}>{menu.title}</a>
+              <a href={menu.path}>{menu.title}</a>  
             </li>
           ))
         }
