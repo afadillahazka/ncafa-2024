@@ -1,0 +1,35 @@
+---
+const guideline = [
+	{
+		number: "1",
+		text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aspernatur ab autem error quos aperiam soluta nulla, praesentium suscipit quidem, odit recusandae asperiores nam. Accusantium atque repellendus debitis animi similique."
+	},
+	{
+		number: "1",
+		text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aspernatur ab autem error quos aperiam soluta nulla, praesentium suscipit quidem, odit recusandae asperiores nam. Accusantium atque repellendus debitis animi similique."
+	},
+	{
+		number: "1",
+		text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aspernatur ab autem error quos aperiam soluta nulla, praesentium suscipit quidem, odit recusandae asperiores nam. Accusantium atque repellendus debitis animi similique."
+	},
+	{
+		number: "1",
+		text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aspernatur ab autem error quos aperiam soluta nulla, praesentium suscipit quidem, odit recusandae asperiores nam. Accusantium atque repellendus debitis animi similique."
+	},
+]
+---
+
+<div class="overflow-x-auto w-full lg:w-1/2 mx-auto">
+    <table class="table">
+      <tbody class="text-base">
+        <!-- row 1 -->
+        { guideline.map((guideline) => (
+            <tr>
+                <th class="text-center">{guideline.number}</th>
+                <td>{guideline.text}</td>
+                </tr>
+                ))
+        }
+      </tbody>
+    </table>
+</div>
