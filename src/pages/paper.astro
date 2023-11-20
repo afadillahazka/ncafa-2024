@@ -6,6 +6,7 @@ import Container from "../components/Container.astro";
 import Contact from "../components/ContactSub.astro";
 import ContactContainer from "../components/ContactContainer.astro";
 import Heading2 from "../components/Heading2.astro";
+import Heading3 from "../components/Heading3.astro";
 import PricePaper from "../components/PricePaper.astro";
 import DatePaper from "../components/DatePaper.astro";
 import SORContainer from "../components/SORContainer.astro";
@@ -74,43 +75,48 @@ import ButtonContainer from "../components/ButtonContainer.astro";
     </Container>
     <Container>
         <Heading2 text="Submission and Registration" />
-        <ButtonContainer>
-            <Button
-                href=""
-                class="fa-solid fa-user-plus"
-                title="Paper Submission"
-                description="Click this button to submit your paper."
-            />
-        </ButtonContainer>
-        <ButtonContainer>
-            <Button
-                href=""
-                class="fa-solid fa-user-plus"
-                title="Paper Registration"
-                description="Click this button to registration call for paper."
-            />
-        </ButtonContainer>
-    </Container>
-    <Container>
-        <Heading2 text="Terms and Conditions" />
-        <ButtonContainer>
-            <Button
-                href=""
-                class="fa-solid fa-download"
-                title="Abstract Template"
-                description="Click this button to download Abstract Template."
-            />
-        </ButtonContainer>
-        <ButtonContainer>
-            <Button
-                href=""
-                class="fa-solid fa-download"
-                title="Full Paper Template"
-                description="Click this button to download Full Paper Template."
-            />
-        </ButtonContainer>
-
-    </Container>
+        <Container>
+            <ButtonContainer>
+                <Heading3
+                    text="International"
+                />
+                <Button
+                    href="https://drive.google.com/uc?export=download&id=1F29PixCxvvVMV1-wvsn9pdh8ntJ3MT-C"
+                    class="fa-solid fa-download"
+                    title="Abstract Template"
+                    description="Click this button to download Abstract Template."
+                />
+            </ButtonContainer>
+            <ButtonContainer>
+                <Button
+                    href="https://drive.google.com/uc?export=download&id=1XJPSratas5NUiJjqdDst0C441QH1jHVZ"
+                    class="fa-solid fa-download"
+                    title="Full Paper Template"
+                    description="Click this button to download Full Paper Template."
+                />
+            </ButtonContainer>
+        </Container>
+        <Container>
+            <ButtonContainer>
+                <Heading3
+                    text="National"
+                />
+                <Button
+                    href="https://drive.google.com/uc?export=download&id=1dVOGJ8wriRZFRpNodTjI-y5uhAY81Q32"
+                    class="fa-solid fa-download"
+                    title="Abstract Template"
+                    description="Click this button to download Abstract Template."
+                />
+            </ButtonContainer>
+            <ButtonContainer>
+                <Button
+                    href="https://drive.google.com/uc?export=download&id=1Bfyo2FBobkycBCslRj9fBnu3I0q2gx_R"
+                    class="fa-solid fa-download"
+                    title="Full Paper Template"
+                    description="Click this button to download Full Paper Template."
+                />
+            </ButtonContainer>
+        </Container>
     <Container>
         <Heading2 text="Contact Us" />
         <ContactContainer>

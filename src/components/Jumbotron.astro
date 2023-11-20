@@ -6,5 +6,5 @@ export interface Props {
 const { src } = Astro.props
 ---
 <div class="relative w-full">
-    <img src={src} alt="">
+    <img src={src} alt="" fetchpriority="high">
 </div>
