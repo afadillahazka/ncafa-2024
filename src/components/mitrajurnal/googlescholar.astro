@@ -1,32 +1,14 @@
 ---
 const mitrajurnal = [
     {
-        name: "",
-        src: "/mitrajurnal/tabr2.png",
+        name: "Trilogi Accounting and Business Research",
+        src: "/mitrajurnal/gs/tabr2.png",
+        href:"https://trilogi.ac.id/journal/ks/index.php/TABR",
     },
     {
-        name: "",
-        src: "/mitrajurnal/jiap2.png",
-    },
-    {
-        name: "",
-        src: "/mitrajurnal/relevan2.png",
-    },
-    {
-        name: "",
-        src: "/mitrajurnal/inquisitive2.png",
-    },
-    {
-        name: "",
-        src: "/mitrajurnal/balance2.png",
-    },
-    {
-        name: "",
-        src: "/mitrajurnal/aamar2.png",
-    },
-    {
-        name: "",
-        src: "/mitrajurnal/akeu.png",
+        name: "International Public Sector Accounting Review",
+        src: "/mitrajurnal/gs/ipsar.png",
+        href:"https://jurnal.pknstan.ac.id/index.php/ipsar",
     },
 ];
 ---
@@ -40,16 +22,18 @@ const mitrajurnal = [
         </h2>
     </div>
     <div
-        class="grid grid-cols-2 justify-center justify-items-center md:grid-cols-3 gap-2 py-4"
+        class="grid grid-cols-2 justify-center justify-items-center md:grid-cols-2 gap-2 py-4"
     >
         {
             mitrajurnal.map((mitrajurnal) => (
                 <div class="flex justify-center">
+                <a href={mitrajurnal.href} target="_blank" class="flex justify-center">
                     <img
                     class="h-3/4 lg:h-auto lg:w-1/2 rounded-lg"
                         src={mitrajurnal.src}
                         alt={mitrajurnal.name}
                     />
+                </a>
                 </div>
             ))
         }

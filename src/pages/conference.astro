@@ -9,22 +9,31 @@ import Heading2 from "../components/Heading2.astro";
 import DateSeminar from "../components/DateSeminar.astro";
 import PriceSeminar from "../components/PriceSeminar.astro";
 import SpeakerSeminar from "../components/SpeakerSeminar.astro";
+import KeynoteSeminar from "../components/KeynoteSeminar.astro"
 import Button from "../components/Button.astro";
 import ButtonContainer from "../components/ButtonContainer.astro";
 import HeadingJumbo from "../components/HeadingJumbo.astro";
+import HeadingMini from "../components/HeadingMini.astro";
 ---
 
 <Layout title="Conference">
 	<Jumbotron 
-	src="/jumbotron/seminar.webp" />
+	src="/jumbotron/seminar-3.webp" />
 	<Container>
 		<Paragraph
 			text="This conference gathers various academics, experts and professionals in their respective fields to provide alternative solutions that bridge the gap between theoretical perspectives and research findings in the academic world with practical realities in both the business and public sectors. It is hoped that this conference will also make a constructive contribution by providing recommendations for government policies, especially in the role of accountants in preventing fraudulent behavior, tax regulations, and policies in the capital market and money market sectors."
 		/>
 	</Container>
 	<Container>
+		<Heading2 text="Keynote Speech" />
+		<KeynoteSeminar/>
+		<HeadingMini text="*) to be confirm" />
+	</Container>
+	<Container>
 		<Heading2 text="Speaker" />
-		<HeadingJumbo text="Coming Soon" />
+		<SpeakerSeminar/>
+		<HeadingJumbo text="More to be announce" />
+		<HeadingMini text="*) to be confirm" />
 	</Container>
 	<Container>
 		<Heading2 text="Timeline" />
