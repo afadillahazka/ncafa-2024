@@ -32,7 +32,7 @@ export default defineConfig({
       "type": "image/png"
     }]
   })],
-  output: "server",
+  output: "hybrid",
   adapter: netlify({
     builders: true,
   })
