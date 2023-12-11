@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
 import webmanifest from "astro-webmanifest";
 
-import netlify from "@astrojs/netlify/functions";
+import netlify from "@astrojs/netlify/static";
 
 // https://astro.build/config
 export default defineConfig({
@@ -35,5 +35,6 @@ export default defineConfig({
   output: "hybrid",
   adapter: netlify({
     builders: true,
+    functionPerRoute: true
   })
 });
