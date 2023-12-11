@@ -4,6 +4,7 @@ import webmanifest from "astro-webmanifest";
 
 // https://astro.build/config
 export default defineConfig({
+  output: 'server',
   integrations: [
     tailwind(), 
     webmanifest({
