@@ -33,7 +33,5 @@ export default defineConfig({
     }]
   })],
   output: "server",
-  adapter: netlify({
-    builders: true
-  })
+  adapter: netlify()
 });
