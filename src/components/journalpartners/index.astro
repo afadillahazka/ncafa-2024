@@ -1,5 +1,5 @@
 ---
-import journalpartnersDB from "../../content/database.js";
+import journalpartnersDB from "../../content/data/database.js";
 ---
 
 <div class="m-1">
@@ -7,7 +7,20 @@ import journalpartnersDB from "../../content/database.js";
         class="flex flex-row flex-wrap justify-center justify-items-center gap-4 my-4"
     >
         {
-            journalpartnersDB.map((journalpartners: any) => (
+            journalpartnersDB
+            .sort((a, b) => {
+                    const scopeA = a.Scope.toUpperCase();
+                    const scopeB = b.Scope.toUpperCase();
+
+                    if (scopeA < scopeB) {
+                        return -1;
+                    }
+                    if (scopeA > scopeB) {
+                        return 1;
+                    }
+                    return 0;
+                })
+            .map((journalpartners: any) => (
                 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
                     <div class="m-5 mx-auto flex justify-center items-center">
                         <img
