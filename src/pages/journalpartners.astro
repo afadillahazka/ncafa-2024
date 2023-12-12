@@ -31,17 +31,16 @@ const journalpartnersDB = data.results;
 						{
 							journalpartnersDB
 							.sort((a, b) => {
-									const scopeA = a.Scope.toUpperCase();
-									const scopeB = b.Scope.toUpperCase();
-				
-									if (scopeA < scopeB) {
-										return -1;
-									}
-									if (scopeA > scopeB) {
-										return 1;
-									}
-									return 0;
-								})
+  // Urut berdasarkan Scope
+  const scopeA = a.Scope.localeCompare(b.Scope);
+  if (scopeA !== 0) {
+    return scopeA;
+  }
+
+  // Urut berdasarkan Tier
+  const tierA = a.Tier.localeCompare(b.Tier);
+  return tierA;
+})
 							.map((journalpartners: any) => (
 								<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
 									<div class="m-5 mx-auto flex justify-center items-center">
