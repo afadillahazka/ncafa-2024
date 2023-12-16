@@ -7,16 +7,17 @@ import Heading2 from "../layouts/components/Heading2.astro";
 import HeadingMini from "../layouts/components/HeadingMini.astro";
 
 const response = await fetch(
-    "https://data.jetadmin.app/projects/inncafa/prod/googlesheets_fyr8/models/database_ti",
+    "https://data.jetadmin.app/projects/inncafa/prod/googlesheets_fyr8/models/database_ti?_no_pagination=true",
     {
       headers: {
-        Authorization: 'Bearer q1ZPkHTDtpqjsmyyspYZ4B2ZK0nq0rqwliw4mCwT',
-      },
+        Authorization: 'Bearer ni1CIx0V8a43zSwsgVzLOlu0VeZKopHppgqOP5fI',
+      }
     }
   );
   
 const data = await response.json();
 const journalpartnersDB = data.results;
+console.log(journalpartnersDB)
 ---
 
 		<Layout title="Journal Partners">
@@ -41,7 +42,7 @@ const journalpartnersDB = data.results;
   const tierA = a.Tier.localeCompare(b.Tier);
   return tierA;
 })
-							.map((journalpartners: any) => (
+							.map((journalpartners) => (
 								<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
 									<div class="m-5 mx-auto flex justify-center items-center">
 										<img
