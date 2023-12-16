@@ -35,10 +35,6 @@ const journalpartnerDB = await fetchData();
 						{
 							journalpartnerDB
 							.sort((a, b) => {
-								const scopeA = a.Scope.localeCompare(b.Scope);
-								if (scopeA !== 0) {
-									return scopeA;
-								}
 								const tierA = a.Tier.localeCompare(b.Tier);
 								return tierA;
 								})

@@ -4,6 +4,12 @@ dist/
 .astro/
 .netlify/
 
+# build
+public/journalpartners
+public/mitrajurnal
+public/narasumber
+
+
 # dependencies
 node_modules/
 
