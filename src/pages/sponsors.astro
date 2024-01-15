@@ -62,6 +62,25 @@ const sponsorsDB = data.results;
 						))
 				}
 			</div>
+			<!-- Silver -->
+			<HeadingMini text="Silver Sponsor" />
+			<div
+				class="flex flex-row flex-wrap justify-center justify-items-center"
+			>
+				{
+					sponsorsDB
+						.filter((sponsor) => sponsor.Paket === "Silver")
+						.map((sponsor: any) => (
+							<div class="max-w-sm bg-white flex justify-center items-center gap-4 m-4">
+								<img
+									class="rounded-t-lg aspect-[4/3] object-contain w-8/12"
+									src={sponsor.MediaUrl}
+									alt={sponsor.Nama}
+								/>
+							</div>
+						))
+				}
+			</div>
 			<!-- Bronze -->
 			<HeadingMini text="Bronze Sponsor" />
 			<div
