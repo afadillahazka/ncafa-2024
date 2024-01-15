@@ -15,18 +15,16 @@ import HeadingMini from "../layouts/components/HeadingMini.astro";
 import Heading3 from "../layouts/components/Heading3.astro";
 
 const response = await fetch(
-    "https://data.jetadmin.app/projects/inncafa/prod/googlesheets_fyr8/models/database_ti",
+    "https://data.jetadmin.app/projects/inncafa/prod/googlesheets_fyr8/models/speakers",
     {
       headers: {
-        Authorization: 'Bearer ni1CIx0V8a43zSwsgVzLOlu0VeZKopHppgqOP5fI',
+        Authorization: 'Bearer q1ZPkHTDtpqjsmyyspYZ4B2ZK0nq0rqwliw4mCwT',
       },
     }
   );
   
 const data = await response.json();
 const speakersDB = data.results;
-const keynoteDB = data.results;
-const openingDB = data.results;
 ---
 
 <Layout title="Conference">
@@ -38,11 +36,10 @@ const openingDB = data.results;
 		/>
 	</Container>
 	<Container>
-		<Heading2 text="Opening Speeches" />
+		<Heading2 text="Opening Speech" />
 		{
-			openingDB
+			speakersDB
 			.filter((speaker) => speaker.role === 'opening')
-			.sort((a, b) => b.__jet_pk__ - a.__jet_pk__)
 			.map((speaker) => (
 				<div class="card card-side w-3/4 justify-center m-auto my-2 flex-col lg:flex-row">
 					<figure class="w-full lg:w-1/2 flex justify-center">
@@ -62,11 +59,10 @@ const openingDB = data.results;
 		<HeadingMini text="*) to be confirm" />
 	</Container>
 	<Container>
-		<Heading2 text="Keynote Speeches" />
+		<Heading2 text="Keynote Speech" />
 		{
-			keynoteDB
+			speakersDB
 			.filter((speaker) => speaker.role === 'keynote')
-			.sort((a, b) => b.__jet_pk__ - a.__jet_pk__)
 			.map((speaker) => (
 				<div class="card card-side w-3/4 justify-center m-auto my-2 flex-col lg:flex-row">
 					<figure class="w-full lg:w-1/2 flex justify-center">
@@ -91,7 +87,7 @@ const openingDB = data.results;
 		{
 			speakersDB
 			.filter((speaker) => speaker.role === 'speaker')
-			.filter(speaker => speaker.day === 1)
+			.filter((speaker) => speaker.day === 1)
 			.map((speaker) => (
 				<div class="card card-side w-3/4 justify-center m-auto my-2 flex-col lg:flex-row">
 					<figure class="w-full lg:w-1/2 flex justify-center">
@@ -112,7 +108,7 @@ const openingDB = data.results;
 		{
 			speakersDB
 			.filter((speaker) => speaker.role === 'speaker')
-			.filter(speaker => speaker.day === 2)
+			.filter((speaker) => speaker.day === 2)
 			.map((speaker) => (
 				<div class="card card-side w-3/4 justify-center m-auto my-2 flex-col lg:flex-row">
 					<figure class="w-full lg:w-1/2 flex justify-center">
