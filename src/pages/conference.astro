@@ -36,7 +36,7 @@ const speakersDB = data.results;
 		/>
 	</Container>
 	<Container>
-		<Heading2 text="Opening Speech" />
+		<Heading2 text="Opening Speeches" />
 		{
 			speakersDB
 			.filter((speaker) => speaker.role === 'opening')
@@ -59,7 +59,7 @@ const speakersDB = data.results;
 		
 	</Container>
 	<Container>
-		<Heading2 text="Keynote Speech" />
+		<Heading2 text="Keynote Speeches" />
 		{
 			speakersDB
 			.filter((speaker) => speaker.role === 'keynote')
@@ -125,8 +125,6 @@ const speakersDB = data.results;
 				</div>
 			))
 		}
-		<HeadingJumbo text="more to be announce" />
-		
 	</Container>
 	<Container>
 		<Heading2 text="Timeline" />
