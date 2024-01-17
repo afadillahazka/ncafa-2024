@@ -32,6 +32,7 @@ const sponsorsDB = data.results;
 				{
 					sponsorsDB
 						.filter((sponsor) => sponsor.Paket === "Platinum")
+						.sort((a, b) => a.__jet_pk__ - b.__jet_pk__)
 						.map((sponsor: any) => (
 							<div class="max-w-sm bg-white flex justify-center items-center gap-4 m-4 w-1/2 mx-auto">
 								<img
@@ -89,6 +90,7 @@ const sponsorsDB = data.results;
 				{
 					sponsorsDB
 						.filter((sponsor) => sponsor.Paket === "Bronze")
+						.sort((a, b) => a.__jet_pk__ - b.__jet_pk__)
 						.map((sponsor: any) => (
 							<div class="max-w-sm bg-white flex justify-center items-center gap-4 m-4">
 								<img
