@@ -34,7 +34,7 @@ const sponsorsDB = data.results;
 						.filter((sponsor) => sponsor.Paket === "Platinum")
 						.sort((a, b) => a.__jet_pk__ - b.__jet_pk__)
 						.map((sponsor: any) => (
-							<div class="max-w-sm bg-white flex justify-center items-center gap-4 m-4 w-1/2 mx-auto">
+							<div class="max-w-sm bg-white flex justify-center items-center gap-4 m-4 w-full mx-auto">
 								<img
 									class="rounded-t-lg aspect-[4/3] object-contain w-full"
 									src={sponsor.MediaUrl}
@@ -53,9 +53,9 @@ const sponsorsDB = data.results;
 					sponsorsDB
 						.filter((sponsor) => sponsor.Paket === "Gold")
 						.map((sponsor: any) => (
-							<div class="max-w-sm bg-white flex justify-center items-center gap-4 m-4">
+							<div class="max-w-sm bg-white flex justify-center items-center w-4/5 gap-4 m-4">
 								<img
-									class="rounded-t-lg aspect-[4/3] object-contain w-8/12"
+									class="rounded-t-lg aspect-[4/3] object-contain w-4/5"
 									src={sponsor.MediaUrl}
 									alt={sponsor.Nama}
 								/>
@@ -74,7 +74,7 @@ const sponsorsDB = data.results;
 						.map((sponsor: any) => (
 							<div class="max-w-sm bg-white flex justify-center items-center gap-4 m-4">
 								<img
-									class="rounded-t-lg aspect-[4/3] object-contain w-8/12"
+									class="rounded-t-lg aspect-[4/3] object-contain w-3/5"
 									src={sponsor.MediaUrl}
 									alt={sponsor.Nama}
 								/>
@@ -94,7 +94,7 @@ const sponsorsDB = data.results;
 						.map((sponsor: any) => (
 							<div class="max-w-sm bg-white flex justify-center items-center gap-4 m-4">
 								<img
-									class="rounded-t-lg aspect-[4/3] object-contain w-6/12"
+									class="rounded-t-lg aspect-[4/3] object-contain w-2/5"
 									src={sponsor.MediaUrl}
 									alt={sponsor.Nama}
 								/>
