@@ -5,5 +5,5 @@
 
 [[redirects]]
   from = "/*"
-  to = "/2024/*"
+  to = "/2024/:splat"
   status = 301
