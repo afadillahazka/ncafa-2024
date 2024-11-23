@@ -4,11 +4,11 @@
   status = 301
 
 [[redirects]]
-  from = "/*"
+  from = "/2024/"
   to = "/2024/:splat"
   status = 301
 
 [[redirects]]
-  from = "/2025/*"
+  from = "/*"
   to = "/2025/:splat"
   status = 301  
