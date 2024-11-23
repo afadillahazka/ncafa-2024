@@ -1,4 +1,4 @@
 [[redirects]]
   from = "/2023"
-  to = "https://fourthinncafa.netlify.app"
+  to = "https://fourthinncafa.netlify.app/:splat"
   status = 200
