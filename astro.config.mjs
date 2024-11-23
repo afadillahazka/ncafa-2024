@@ -12,7 +12,7 @@ export default defineConfig({
     description: 'The International and National Conference on Accounting & Fraud Auditing (NCAFA) is a national level conference in the field of accounting and auditing which has a series of Call for Paper and Seminar activities.',
     theme_color: "rgba(86,182,74,1)",
     background_color: '#ffffff',
-    start_url: '/',
+    start_url: '/2024/',
     display: 'standalone',
     icons: [{
       "src": "icon/icon-192x192.png",
