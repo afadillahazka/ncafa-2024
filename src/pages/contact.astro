@@ -1,13 +1,13 @@
 ---
-import Jumbotron from "../components/Jumbotron.astro";
-import Paragraph from "../components/Paragraph.astro";
-import Layout from "../layouts/Layout.astro";
-import Container from "../components/Container.astro";
-import ContactSub from "../components/ContactSub.astro"
-import ContactContainer from "../components/ContactContainer.astro";
-import Heading2 from "../components/Heading2.astro";
-import DateIndex from "../components/DateIndex.astro";
-import ContainerScreen from "../components/ContainerScreen.astro";
+import Jumbotron from "../layouts/partials/Jumbotron.astro";
+import Paragraph from "../layouts/components/Paragraph.astro";
+import Layout from "../layouts/partials/Layout.astro";
+import Container from "../layouts/partials/Container.astro";
+import ContactSub from "../layouts/components/ContactSub.astro"
+import ContactContainer from "../layouts/components/ContactContainer.astro";
+import Heading2 from "../layouts/components/Heading2.astro";
+import DateIndex from "../layouts/components/DateIndex.astro";
+import ContainerScreen from "../layouts/partials/ContainerScreen.astro";
 
 ---
 
@@ -67,16 +67,6 @@ import ContainerScreen from "../components/ContainerScreen.astro";
 					href="https://wa.me/6283806707035"
 					,
 				/>
-					<ContactSub
-					media="WhatsApp (Media Partner)"
-					,
-					class="fa-brands fa-whatsapp fa-2xl py-3 text-black"
-					,
-					text="+62 851-5618-1049 (Mr. Aditya)"
-					,
-					href="https://wa.me/6285156181049"
-					,
-				/>
 				<ContactSub
 					media="Email"
 					,
@@ -84,7 +74,7 @@ import ContainerScreen from "../components/ContainerScreen.astro";
 					,
 					text="in-ncafa@trilogi.ac.id"
 					,
-					href="wa.me/6281288425931"
+					href=""
 					,
 					/>
 					<ContactSub
@@ -95,6 +85,16 @@ import ContainerScreen from "../components/ContainerScreen.astro";
 					text="@in.ncafatrilogi"
 					,
 					href="https://www.instagram.com/in.ncafatrilogi"
+					,
+				/>
+					<ContactSub
+					media="LinkedIn"
+					,
+					class="fa-brands fa-linkedin fa-2xl py-3 text-black"
+					,
+					text="@in.ncafatrilogi"
+					,
+					href="https://www.linkedin.com/company/cafa-trilogi"
 					,
 				/>
 			</ContactContainer>

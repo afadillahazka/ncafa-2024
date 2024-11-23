@@ -1,62 +1,62 @@
 ---
-import Jumbotron from "../components/Jumbotron.astro";
-import Paragraph from "../components/Paragraph.astro";
-import Layout from "../layouts/Layout.astro";
-import Container from "../components/Container.astro";
-import Contact from "../components/ContactSub.astro";
-import ContactContainer from "../components/ContactContainer.astro";
-import Heading2 from "../components/Heading2.astro";
-import Heading3 from "../components/Heading3.astro";
-import PricePaper from "../components/PricePaper.astro";
-import DatePaper from "../components/DatePaper.astro";
-import SORContainer from "../components/SORContainer.astro";
-import SOR from "../components/SOR.astro";
-import Button from "../components/Button.astro";
-import ButtonContainer from "../components/ButtonContainer.astro";
+import Jumbotron from "../layouts/partials/Jumbotron.astro";
+import Paragraph from "../layouts/components/Paragraph.astro";
+import Layout from "../layouts/partials/Layout.astro";
+import Container from "../layouts/partials/Container.astro";
+import Contact from "../layouts/components/ContactSub.astro";
+import ContactContainer from "../layouts/components/ContactContainer.astro";
+import Heading2 from "../layouts/components/Heading2.astro";
+import Heading3 from "../layouts/components/Heading3.astro";
+import PricePaper from "../layouts/components/PricePaper.astro";
+import DatePaper from "../layouts/components/DatePaper.astro";
+import SORContainer from "../layouts/components/SORContainer.astro";
+import SOR from "../layouts/components/SOR.astro";
+import Button from "../layouts/helpers/Button.astro";
+import ButtonContainer from "../layouts/helpers/ButtonContainer.astro";
 ---
 
 <Layout title="Call for Paper">
     <Jumbotron 
-    src="/jumbotron/callforpaper-desktop.webp" />
+    src="/jumbotron/paper-3.webp" />
     <Container>
         <Paragraph
-            text="As a form of contribution to the development of accounting science in Indonesia, it was jointly initiated by the Association of Certified Fraud Examiners (ACFE) Indonesia Chapter and the Association of Public Sector Accounting Educators (APSAE) which was also supported by the Indonesian Institute of Accountants (IAI). As well as during this conference trip, it was also held in collaboration with SINTA Accredited Journals, Index Copernicus, ProQuest, DOAJ, RePec, Google Scholar"
+            text="As a form of contribution to the development of accounting science in Indonesia, it was jointly initiated by the Association of Certified Fraud Examiners (ACFE) Indonesia Chapter and the Association of Public Sector Accounting Educators (APSAE) which was also supported by the Indonesian Institute of Accountants (IAI) Compartment of Accountants Educators for DKI Jakarta Region. As well as during this conference trip, it was also held in collaboration with SINTA Accredited Journals, Index Copernicus, ProQuest, DOAJ, RePec, Google Scholar."
         />
     </Container>
     <Container>
         <Heading2 text="Scope of Research" />
         <SORContainer>
             <SOR
-                sor="Financial Accounting and Capital Markets"
+                sor="Financial Accounting and Capital Markets (FACM)"
                 class="fa-solid fa-money-bill-trend-up fa-2xl pb-4"
             />
             <SOR
-                sor="Management and Behavioral Accounting"
+                sor="Management and Behavioral Accounting (MBA)"
                 class="fa-solid fa-bars-progress fa-2xl pb-4 h-1/2"
             />
             <SOR
-                sor="Public Sector Accounting"
+                sor="Public Sector Accounting (PSA)"
                 class="fa-solid fa-user fa-2xl pb-4"
             />
             <SOR
-                sor="Sharia Accounting"
+                sor="Sharia Accounting (SRA)"
                 class="fa-solid fa-star-and-crescent fa-2xl pb-4"
             />
             <SOR
-                sor="Fraud and Forensic Accounting"
+                sor="Fraud and Forensic Accounting (FFA)"
                 class="fa-solid fa-building-shield fa-2xl pb-4"
             />
             <SOR
-                sor="Accounting Education"
+                sor="Accounting Education (AEd)"
                 class="fa-solid fa-graduation-cap fa-2xl pb-4"
             />
-            <SOR sor="Taxation" class="fa-solid fa-receipt fa-2xl pb-4" />
+            <SOR sor="Taxation (TAX)" class="fa-solid fa-receipt fa-2xl pb-4" />
             <SOR
-                sor="Information Systems, Auditing, and Professional Ethics "
+                sor="Information Systems, Auditing, and Professional Ethics (ISAPE)"
                 class="fa-solid fa-sitemap fa-2xl pb-4"
             />
             <SOR
-                sor="Governance & Sustainability Accounting"
+                sor="Governance & Sustainability Accounting (GSA)"
                 class="fa-solid fa-users-between-lines fa-2xl pb-4"
             />
         </SORContainer>
@@ -94,10 +94,9 @@ import ButtonContainer from "../components/ButtonContainer.astro";
     </Container>
     <Container>
         <Heading2 text="Paper Template" />
-        <Container>
             <ButtonContainer>
                 <Heading3
-                    text="International Paper"
+                    text="International"
                 />
                 <Button
                     href="https://drive.google.com/uc?export=download&id=1xkoK4UQxPrD0dIAhE5x3UwCHTAfpedc5"
@@ -108,7 +107,7 @@ import ButtonContainer from "../components/ButtonContainer.astro";
             </ButtonContainer>
             <ButtonContainer>
                 <Button
-                    href="https://drive.google.com/uc?export=download&id=1XJPSratas5NUiJjqdDst0C441QH1jHVZ"
+                    href="https://drive.google.com/uc?export=download&id=1XJPSratas5NUiJjqdDst0C441QH1jHVZ "
                     class="fa-solid fa-download"
                     title="Full Paper Template"
                     description="Click this button to download Full Paper Template."
@@ -116,10 +115,10 @@ import ButtonContainer from "../components/ButtonContainer.astro";
             </ButtonContainer>
             <ButtonContainer>
                 <Heading3
-                    text="National Paper"
+                    text="National"
                 />
                 <Button
-                    href="https://drive.google.com/uc?export=download&id=1dVOGJ8wriRZFRpNodTjI-y5uhAY81Q32"
+                    href="https://drive.google.com/uc?export=download&id=1dVOGJ8wriRZFRpNodTjI-y5uhAY81Q32 "
                     class="fa-solid fa-download"
                     title="Abstract Template"
                     description="Click this button to download Abstract Template."
@@ -164,7 +163,7 @@ import ButtonContainer from "../components/ButtonContainer.astro";
                 ,
                 text="@in.ncafatrilogi"
                 ,
-                href=""
+                href="https://www.instagram.com/in.ncafatrilogi"
                 ,
             />
         </ContactContainer>
