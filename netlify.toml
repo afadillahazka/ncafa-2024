@@ -4,6 +4,6 @@
   status = 301
 
 [[redirects]]
-  from = "/"
-  to = "/2024"
+  from = "/*"
+  to = "/2024/*"
   status = 301
