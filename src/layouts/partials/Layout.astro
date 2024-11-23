@@ -3,6 +3,7 @@ import NavigationBar from "./NavigationBar.astro";
 import NavBarTop from "./NavBarTop.astro";
 import Container from "./Container.astro";
 import Footer from "./Footer.astro";
+import Warning from "../helpers/Warning.astro";
 
 export const prerender = true;
 export interface props {
@@ -10,6 +11,12 @@ export interface props {
 }
 
 const { title } = Astro.props
+
+// Access the current URL
+const currentPath = Astro.url.pathname;
+
+// Check if the current path matches `/2024/`
+const shouldShowWarning = currentPath === '/2024/';
 ---
 
 <!doctype html>
@@ -25,7 +32,8 @@ const { title } = Astro.props
 			href="/icon/ncafa-icon.webp"
 		/>
     </head>
-    <body class="min-h-full flex flex-col">
+    <body class="min-h-full block">
+        {shouldShowWarning && <Warning />}
         <NavigationBar/>
         <slot />
         <Footer />
