@@ -1,1 +1,7 @@
-/2023/*  https://fourthinncafa.netlify.app/:splat  200
+[[redirects]]
+  from = "/2023"
+  to = "https://fourthinncafa.netlify.app"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+  headers = {X-From = "Netlify"}
+  signed = "API_SIGNATURE_TOKEN"
